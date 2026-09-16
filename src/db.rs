@@ -30,6 +30,13 @@ pub async fn run_migrations(pool: &DbPool) -> Result<(), AppError> {
         .await
         .map_err(AppError::from)?;
 
+    // Run superuser & roles migration
+    let roles_sql = include_str!("../migrations/0003_superuser_and_roles.sql");
+    sqlx::raw_sql(roles_sql)
+        .execute(pool)
+        .await
+        .map_err(AppError::from)?;
+
     tracing::info!("Database schema and seed migrations applied successfully");
     Ok(())
 }
