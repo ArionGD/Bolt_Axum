@@ -2,6 +2,7 @@
 name = "ev-dealership-backend"
 version = "0.1.0"
 edition = "2021"
+default-run = "ev-dealership-backend"
 
 [dependencies]
 axum = { version = "0.8", features = ["json"] }
