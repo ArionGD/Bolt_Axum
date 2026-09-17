@@ -1,6 +1,6 @@
-# Volt EV Dealership — Axum Backend & Database
+# Trisha Motors — Axum Backend & Database
 
-High-performance Rust Axum backend powering the Volt EV Dealership management system, integrated with PostgreSQL (Supabase) and serving the standalone Superuser Admin Panel.
+High-performance Rust Axum backend powering the Trisha Motors EV Dealership management system, integrated with PostgreSQL (Supabase) and serving the standalone Superuser Admin Panel.
 
 ## Features
 - **Axum High-Performance API**: RESTful endpoints for Inventory, Leads, Test Drives, Quotations, and Orders with physical VIN locking.

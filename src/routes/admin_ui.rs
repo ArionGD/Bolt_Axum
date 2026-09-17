@@ -8,7 +8,7 @@ pub async fn admin_panel() -> Html<&'static str> {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>VoltDealership — Superuser Admin Panel (Backend Integrated)</title>
+  <title>Trisha Motors — Superuser Admin Panel (Backend Integrated)</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://unpkg.com/lucide@latest"></script>
   <script>
@@ -65,12 +65,12 @@ pub async fn admin_panel() -> Html<&'static str> {
         </div>
         <div>
           <div class="flex items-center space-x-2">
-            <span class="font-extrabold text-base tracking-tight text-white">Volt<span class="text-brand-400">Admin</span></span>
+            <span class="font-extrabold text-base tracking-tight text-white">Trisha<span class="text-brand-400">Motors Admin</span></span>
             <span class="px-2 py-0.5 text-[10px] font-extrabold uppercase tracking-wider bg-sky-500/20 text-sky-300 border border-sky-500/30 rounded-full">
               Axum Backend .ENV
             </span>
           </div>
-          <p class="text-[11px] text-slate-400">Render Hosted Superuser Management Panel</p>
+          <p class="text-[11px] text-slate-400">Trisha Motors Superuser Operations Panel</p>
         </div>
       </div>
 
@@ -106,7 +106,7 @@ pub async fn admin_panel() -> Html<&'static str> {
       <form id="login-form" onsubmit="handleAdminLogin(event)" class="space-y-4 text-xs">
         <div>
           <label class="block text-slate-300 font-bold mb-1">Superuser Email</label>
-          <input type="email" id="admin-email" required value="superuser@voltdealership.com" class="w-full p-2.5 bg-white/[0.04] border border-white/10 rounded-xl text-white font-mono text-xs focus:ring-2 focus:ring-brand-500 outline-none">
+          <input type="email" id="admin-email" required value="superuser@boltcrm.com" class="w-full p-2.5 bg-white/[0.04] border border-white/10 rounded-xl text-white font-mono text-xs focus:ring-2 focus:ring-brand-500 outline-none">
         </div>
         <div>
           <label class="block text-slate-300 font-bold mb-1">Master Password</label>
@@ -211,7 +211,7 @@ pub async fn admin_panel() -> Html<&'static str> {
         </div>
         <div>
           <label class="block text-slate-300 font-bold mb-1">Work Email *</label>
-          <input type="email" id="mgr-email" required placeholder="manager1@voltdealership.com" class="w-full p-2.5 bg-white/[0.04] border border-white/10 rounded-xl text-white font-mono focus:ring-2 focus:ring-brand-500 outline-none">
+          <input type="email" id="mgr-email" required placeholder="manager1@trishamotors.com" class="w-full p-2.5 bg-white/[0.04] border border-white/10 rounded-xl text-white font-mono focus:ring-2 focus:ring-brand-500 outline-none">
         </div>
         <div class="grid grid-cols-2 gap-3">
           <div>

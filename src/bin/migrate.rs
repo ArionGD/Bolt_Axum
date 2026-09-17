@@ -33,6 +33,15 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
     sqlx::raw_sql(roles_sql).execute(&pool).await?;
     println!("✓ 0003_superuser_and_roles.sql applied!");
 
+    // Clean up any old duplicate brand rows
+    sqlx::query("DELETE FROM vehicle_models WHERE brand IN ('EV Scooty', 'EV Rickshaw')")
+        .execute(&pool)
+        .await?;
+    sqlx::query("UPDATE app_accounts SET email = 'manager1@trishamotors.com' WHERE email = 'manager1@voltdealership.com'")
+        .execute(&pool)
+        .await?;
+    println!("✓ Live database updated to Trisha Motors branding!");
+
     let models_count: (i64,) = sqlx::query_as("SELECT count(*) FROM vehicle_models")
         .fetch_one(&pool)
         .await?;

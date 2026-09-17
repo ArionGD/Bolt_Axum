@@ -40,7 +40,7 @@ impl Config {
         let app_env = env::var("APP_ENV").unwrap_or_else(|_| "development".to_string());
 
         let superuser_email = env::var("SUPERUSER_EMAIL")
-            .unwrap_or_else(|_| "superuser@voltdealership.com".to_string());
+            .unwrap_or_else(|_| "superuser@boltcrm.com".to_string());
 
         let superuser_password = env::var("SUPERUSER_PASSWORD")
             .unwrap_or_else(|_| "SuperAdminSecret2026!".to_string());

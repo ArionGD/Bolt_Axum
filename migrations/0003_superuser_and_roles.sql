@@ -33,7 +33,7 @@ create table if not exists app_accounts (
 insert into app_accounts (id, email, phone, full_name, role, password_hash, is_active)
 values (
   '11111111-1111-1111-1111-111111111111',
-  'manager1@voltdealership.com',
+  'manager1@trishamotors.com',
   '+91 98000 11111',
   'Manager 1',
   'manager',

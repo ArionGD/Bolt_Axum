@@ -107,7 +107,7 @@ pub async fn list_users(
         // Fallback demo manager if offline/mock
         all_users.push(AccountRecordDto {
             id: "usr_manager_1".to_string(),
-            email: Some("manager1@voltdealership.com".to_string()),
+            email: Some("manager1@trishamotors.com".to_string()),
             phone: Some("+91 98000 11111".to_string()),
             full_name: "Manager 1".to_string(),
             role: "manager".to_string(),
