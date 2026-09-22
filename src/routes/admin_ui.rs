@@ -65,7 +65,7 @@ pub async fn admin_panel() -> Html<&'static str> {
         </div>
         <div>
           <div class="flex items-center space-x-2">
-            <span class="font-extrabold text-base tracking-tight text-white">Trisha<span class="text-brand-400">Motors Admin</span></span>
+            <span class="font-extrabold text-base tracking-tight text-white">Trisha <span class="text-brand-400">Motors</span></span>
             <span class="px-2 py-0.5 text-[10px] font-extrabold uppercase tracking-wider bg-sky-500/20 text-sky-300 border border-sky-500/30 rounded-full">
               Axum Backend .ENV
             </span>
